@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTEGORO</title>
+    <style>
+        body {
+            font-family: "Noto Sans JP", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7d33c;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffe066;
+        }
+
+        .header img {
+            height: 60px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #f7d33c;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            line-height: 1.5;
+            border-top: 1px solid #e5b935;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .footer-contact {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="ba.png" alt="OTEGORO Logo">
+            <nav class="nav">
+                <a href="#">ホーム</a>
+                <a href="#">料金について</a>
+                <a href="#">サービス紹介</a>
+                <a href="#">制作の流れ</a>
+                <a href="#">よくある質問</a>
+                <a href="#">お支払い方法</a>
+                <a href="#">利用規約</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div class="cards">
+                <div class="card">
+                    <img src="icon1.png" alt="お申し込み">
+                    <p>お申し込み</p>
+                </div>
+                <div class="card">
+                    <img src="icon2.png" alt="料金シミュレーション">
+                    <p>料金シミュレーション</p>
+                </div>
+                <div class="card">
+                    <img src="icon3.png" alt="お問い合わせ">
+                    <p>お問い合わせ</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>運営会社 株式会社GROW</p>
+            <p class="footer-contact">所在地 愛知県豊田市曙町5-221-1</p>
+            <p class="footer-contact">TEL: 056-212-1244</p>
+            <p>営業時間: 10:00〜17:00 (土日祝休)</p>
+            <p>&copy; GROW All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

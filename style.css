@@ -1,0 +1,205 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  background: #fcfbfa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 1200px;
+  background: #fcfbfa;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #f7c0c5;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 1200px;
+  background: #570a0a;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+  color: #fcfbfa;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+}
+
+.hero-text p {
+  margin: 20px 0;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background: #fcfbfa;
+  color: #570a0a;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Card Wrapper */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #fdf5e6;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cake-image {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.text-content li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Popup Styling */
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.card:hover .popup {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .cake-image {
+    width: 80px;
+  }
+
+  .text-content h1 {
+    font-size: 18px;
+  }
+
+  .text-content ul {
+    padding-left: 10px;
+  }
+}

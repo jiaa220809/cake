@@ -1,0 +1,117 @@
+.card-wrapper{
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item{
+  list-style: none;
+}
+
+.card-list .card-item .card-link{
+ user-select: none;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #600606;
+}
+
+.card-list .card-link .card-image{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: deeppink;
+  background: #DDE4FF;
+  margin: 16px 0 18px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.tmpk1{
+  color: aqua;
+  background: #600606;
+}
+
+.card-list .card-link .badge.tmpk2{
+  color: rgb(231, 222, 41);
+  background: #50d136;
+}
+
+.card-list .card-link .badge.tmpk3{
+  color: rgb(0, 26, 255);
+  background: #e61890;
+}
+
+.card-list .card-link .badge.tmpk4{
+  color: rgb(210, 73, 9);
+  background: #600606;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: black;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  border: 2px solid #600606;
+  color: #600606;
+  background: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+  color: #fff;
+  background-color: #600606;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #600606;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+  color: #600606;
+  margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+      margin: 0-10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button{
+      display: none;
+  }
+}
